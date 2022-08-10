@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { useEffect, useState } from 'react';
 
 function userRepo() {
 
@@ -11,7 +10,7 @@ function userRepo() {
         const getData = async() => {
             try {
                 const { data } = await axios.get(''),
-                setData(data)
+                setData(data);
             } catch (e) {
                 console.warn('Opps. ${e.message}')
             }
