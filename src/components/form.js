@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import axios from "axios";
 
 function Form() {
     const [formData, setFormData] = useState({username: ''})
@@ -12,9 +13,9 @@ function handleFormSubmit(e){
 }
   return (
 <>
-<form onSubmit={handleFormSubmit}>
+<form role='form' onSubmit={handleFormSubmit}>
     <input type='text' name='username' placeholder='Enter Your GitHub username' />
-    <input type='submit' className='submitBtn' value='Submit' />
+    <input aria-lable="Location" type='submit' className='submitBtn' value='Search' onChange={updateInput}/>
 </form>
 </>
   )

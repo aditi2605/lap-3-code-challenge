@@ -15,7 +15,6 @@ return <>
 <header>
 <nav> <NavLink to='/'>HomePage</NavLink>
 <NavLink to='/userRepo'>userRepoPage</NavLink>
-<NavLink to='/'>error</NavLink>
 </nav>
 </header>
 <main><Outlet /></main>

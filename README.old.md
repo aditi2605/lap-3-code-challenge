@@ -1,1 +1,0 @@
-# lap-3-code-challenge

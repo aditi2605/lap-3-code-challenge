@@ -1,19 +1,19 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
-import Form from './components/form';
-import userRepo from './components/userRepo';
+import { PageWrapper } from './layouts';
+import {FormPage, userRepoPage} from './Pages';
 
 
 
 function App() {
   return (
-    <>
-    <h2>hello</h2>
+    <div id="app">
+    <PageWrapper />
       <Routes>
           <Route path="/" element={<Pages.FormPage />} />
           <Route path="/userRepo" element={<Pages.userRepoPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
