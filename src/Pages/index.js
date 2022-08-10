@@ -1,10 +1,2 @@
-import React from "react";
-
-
-const userRepoPage = () => {
-    return <>
-    <Form />
-    </>
-}
-
-export default userRepoPage
+export { default as FormPage } from './FormPage';
+export { default as userRepoPage } from './userRepoPage';
