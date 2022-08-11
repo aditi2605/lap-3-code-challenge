@@ -9,7 +9,7 @@ function userRepo() {
     useEffect(() => {
         const getData = async() => {
             try {
-                const { data } = await axios.get('');
+                const { data } = await axios.get('https://GET /users/{username}/repos', { username: 'USERNAME'});
                 setData(data);
             } catch (e) {
                 console.warn('Opps. ${e.message}')
